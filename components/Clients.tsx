@@ -26,7 +26,11 @@ export default function Clients() {
                     height={20}
                     className="opacity-40 group-hover:opacity-80 transition-opacity duration-300"
                     style={(!isLocal || client.forceWhite) ? { filter: "brightness(0) invert(1)" } : undefined}
-                    onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+                    onError={(e) => {
+                      const el = e.currentTarget as HTMLImageElement;
+                      el.style.display = "none";
+                      if (el.parentElement) el.parentElement.style.display = "none";
+                    }}
                   />
                 </div>
               )}

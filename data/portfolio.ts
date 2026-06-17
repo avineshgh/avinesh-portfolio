@@ -6,8 +6,8 @@ export const personalInfo = {
   phone: "+91-9087013160",
   location: "Chennai, Tamil Nadu",
   social: {
-    linkedin: "https://linkedin.com/in/avinesh-harikrishnan",
-    github: "https://github.com/avinesh-harikrishnan",
+    linkedin: "https://www.linkedin.com/in/avineshharikrishnan",
+    github: "https://github.com/avineshgh",
   },
 };
 
@@ -59,6 +59,8 @@ export const projects = [
     year: "2025",
     tags: ["Python", "FastAPI", "Gemini S2S", "VAD", "Vertex AI", "GCP Cloud Run", "GCP Bucket", "RAG Engine", "PostgreSQL", "Promptfoo"],
     thumbnail: null,
+    gradient: "linear-gradient(135deg, #0a1628 0%, #0f2d4a 50%, #0d1f35 100%)",
+    icon: "mic",
     overview:
       "A multi-source Knowledge Base platform powering dynamic, context-aware voice agent responses with file uploads, website crawling, and raw text ingestion.",
     role: "AI Developer",
@@ -74,6 +76,8 @@ export const projects = [
     year: "2025",
     tags: ["Python", "FastAPI", "MSAL", "Azure DevOps", "Azure App Service", "PostgreSQL", "Azure OpenAI"],
     thumbnail: null,
+    gradient: "linear-gradient(135deg, #0e0e2e 0%, #1a1060 50%, #080820 100%)",
+    icon: "code",
     overview:
       "An internal AI-powered SDLC platform with SSO, dynamic Azure DevOps sync, workspace management, and AI-generated test cases from user stories.",
     role: "AI Developer",
@@ -89,6 +93,8 @@ export const projects = [
     year: "2025",
     tags: ["VOI", "Python", "FastAPI", "GCP Cloud Run", "PostgreSQL", "SMTP", "Twilio"],
     thumbnail: null,
+    gradient: "linear-gradient(135deg, #0a1f0a 0%, #1a3d1a 50%, #0d2a0d 100%)",
+    icon: "phone",
     overview:
       "A production inbound voice AI agent handling sales queries, appointment booking, and lead capture — replacing the need for a live sales representative.",
     role: "AI Developer",
@@ -104,6 +110,8 @@ export const projects = [
     year: "2024",
     tags: ["CrewAI", "LangChain", "n8n", "Python"],
     thumbnail: null,
+    gradient: "linear-gradient(135deg, #1e0a2e 0%, #3d1060 50%, #150820 100%)",
+    icon: "network",
     overview:
       "A multi-agent automation platform for sales and marketing — Agent Sam for lead generation and scheduling, Agent Alfred for social media content creation.",
     role: "Junior AI Developer",
@@ -119,6 +127,8 @@ export const projects = [
     year: "2024",
     tags: ["VOI", "Python", "FastAPI", "GCP Cloud Run", "PostgreSQL", "SMTP", "Twilio"],
     thumbnail: null,
+    gradient: "linear-gradient(135deg, #041e1e 0%, #0a3d3d 50%, #062828 100%)",
+    icon: "utensils",
     overview:
       "A voice agent for a restaurant client handling takeaway orders and table bookings over phone with automated SMS notifications.",
     role: "AI Developer",
@@ -179,7 +189,6 @@ export const skills = [
   { label: "LangChain", category: "AI Framework" },
   { label: "LangGraph", category: "AI Framework" },
   { label: "CrewAI", category: "AI Framework" },
-  { label: "LiteLLM", category: "AI Framework" },
   { label: "Promptfoo", category: "AI Framework" },
   { label: "RAG", category: "AI" },
   { label: "LLM Integration", category: "AI" },

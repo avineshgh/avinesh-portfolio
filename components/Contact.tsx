@@ -47,16 +47,13 @@ export default function Contact() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="text-center mb-14"
         >
-          <p className="text-xs text-white/30 uppercase tracking-[0.2em] mb-4">
-            Get In Touch
-          </p>
           <h2 className="text-3xl sm:text-4xl font-light text-white/90 leading-snug mb-4">
-            Tell me about your{" "}
-            <span className="font-semibold text-white">next project</span>
+            Let&apos;s{" "}
+            <span className="font-semibold text-white">connect</span>
           </h2>
           <p className="text-sm text-white/40">
-            Have a project in mind? I&apos;d love to hear about it. Let&apos;s build
-            something great together.
+            Open to discussing AI, sharing ideas, or exploring opportunities.
+            Feel free to reach out.
           </p>
         </motion.div>
 

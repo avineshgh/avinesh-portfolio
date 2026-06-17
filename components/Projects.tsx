@@ -2,11 +2,19 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Mic, Code2, Phone, Network, UtensilsCrossed } from "lucide-react";
 import { projects } from "@/data/portfolio";
 import ProjectModal from "./ProjectModal";
 
 type Project = (typeof projects)[number];
+
+const iconMap: Record<string, React.ReactNode> = {
+  mic: <Mic size={32} className="text-white/20" />,
+  code: <Code2 size={32} className="text-white/20" />,
+  phone: <Phone size={32} className="text-white/20" />,
+  network: <Network size={32} className="text-white/20" />,
+  utensils: <UtensilsCrossed size={32} className="text-white/20" />,
+};
 
 const container = {
   hidden: {},
@@ -57,10 +65,30 @@ export default function Projects() {
           >
             {/* Thumbnail */}
             <div
-              className="w-full h-44 flex items-center justify-center transition-all duration-500 group-hover:brightness-110"
-              style={{ background: project.color }}
+              className="relative w-full h-44 flex items-center justify-center overflow-hidden transition-all duration-500 group-hover:brightness-110"
+              style={{ background: project.gradient ?? project.color }}
             >
-              <span className="text-white/20 text-xs">{project.category}</span>
+              {/* Dot grid pattern */}
+              <div
+                className="absolute inset-0 opacity-20"
+                style={{
+                  backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px)",
+                  backgroundSize: "20px 20px",
+                }}
+              />
+              {/* Glow */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              {/* Icon */}
+              <div className="relative z-10 flex flex-col items-center gap-2">
+                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm group-hover:bg-white/10 transition-all duration-300">
+                  {project.icon ? iconMap[project.icon] : (
+                    <span className="text-white/20 text-xs">{project.category}</span>
+                  )}
+                </div>
+                <span className="text-white/25 text-[10px] uppercase tracking-widest">
+                  {project.category}
+                </span>
+              </div>
             </div>
 
             {/* Content */}

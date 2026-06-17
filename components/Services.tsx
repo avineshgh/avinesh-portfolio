@@ -36,9 +36,9 @@ export default function Services() {
           What I Do
         </p>
         <h2 className="text-3xl sm:text-4xl font-light text-white/90 max-w-xl mx-auto leading-snug">
-          <span className="font-semibold text-white">Collaborate</span> with brands and
-          agencies to create{" "}
-          <span className="font-semibold text-white">impactful results.</span>
+          Building <span className="font-semibold text-white">production-grade AI</span> systems
+          that solve{" "}
+          <span className="font-semibold text-white">real problems at scale.</span>
         </h2>
       </motion.div>
 
